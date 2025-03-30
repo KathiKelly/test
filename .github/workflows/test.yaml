@@ -1,0 +1,12 @@
+name: Hello, World - Use a group
+ 
+# Controls when the workflow will run, in this case manually
+on: workflow_dispatch
+
+jobs:
+  PrintHelloWorld:
+    name: Print Hello, World!
+    runs-on: 
+      group: test1
+    steps: 
+    - run: echo "Hello, World!"
